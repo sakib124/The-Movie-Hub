@@ -25,10 +25,12 @@ body {
 }
 .carousel-caption {
   position: absolute;
-  top: 5px;
+  top: 40px;
+  bottom: 40px;
   left: 40px;
+  right: 40px;
 }
-#myButton {
+.myButton {
   margin-top: 50px;
   margin-left: 5px;
   box-shadow: inset 0px 0px 15px 3px #23395e;
@@ -48,13 +50,14 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
-#myButton:hover {
+.myButton:hover {
   background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
   background-color: #415989;
 }
-#myButton:active {
+.myButton:focus {
   position: relative;
   top: 1px;
+  background: linear-gradient(to bottom, #6a93db 5%, #b5bbc9 100%);
 }
 
 #list .card {
@@ -68,6 +71,21 @@ body {
 }
 
 #list .card:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+#searchList .card {
+  margin-top: 30px;
+  white-space: normal;
+  overflow: hidden;
+  text-align: left;
+  background-color: #100542;
+  color: white;
+  opacity: 0.6;
+}
+
+#searchList .card:hover {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -141,4 +159,30 @@ body {
   to {
     opacity: 1;
   }
+}
+
+#back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#share {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#item1 img {
+  border-radius: 15px;
+}
+
+a {
+  cursor: pointer;
 }

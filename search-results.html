@@ -23,8 +23,8 @@
       
       <div class="collapse navbar-collapse" id="navbarNav">
         <form class="form-inline my-2 my-lg-0 ml-auto">
-          <input class="form-control mr-sm-2 " style="font-size: 1.25rem;" type="search" placeholder="Search" aria-label="Search">
-          <button id = "search" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search fa-2x"></i></button>
+          <input id ="movie" class="form-control mr-sm-2 " style="font-size: 1.25rem;" type="search" placeholder="Search" aria-label="Search">
+          <button id = "search" class="btn btn-outline-success my-2 my-sm-0" type="button"><i class="fas fa-search fa-2x"></i></button>
         </form>
         <ul id = "navigation" class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -40,7 +40,12 @@
       </div>
     </nav>
 
-    
+    <div class="container">
+      <div id ="searchQuery" class="col-sm-12 text-center">
+        
+    </div>
+    <div id = "searchList"class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
+    </div>
 
     <!-- Search Results List -->
     <div class="container">
@@ -51,7 +56,7 @@
      </div>
 </div>
 <br>
-<div id = "list"class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
+<div id = "list"class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
   <div class="col">
     <a class="text-decoration-none" href="google.com">
     <div class="card">
@@ -169,8 +174,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script>
+      getMovies();
+    </script>
   </body>
 </html>
