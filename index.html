@@ -15,8 +15,8 @@
   </head>
   <body>
     <!-- Nav-bar -->
-    <nav class="navbar navbar-expand-lg sticky navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><i class="fas fa-film fa-2x"></i><span style="font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a>
+    <nav class="navbar navbar-expand-lg sticky navbar-dark">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-film fa-2x"></i><span style="font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -68,19 +68,20 @@
     <div class="container">
       <div class="row">
     <div class="col-sm-12 text-center">
-      <button class= "myButton" id="nowPlaying">NOW PLAYING</button>
-      <button class= "myButton" id="upcoming" >UPCOMING</button>
-      <button class= "myButton" id="topRated" >TOP RATED</button>
+      <button class= "categoryButton" id="nowPlaying">NOW PLAYING</button>
+      <button class= "categoryButton" id="upcoming" >UPCOMING</button>
+      <button class= "categoryButton" id="topRated" >TOP RATED</button>
      </div>
 </div>
 <br>
 <div id = "list"class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
   
-  </div>        
+  </div> 
+</div>
 
-
+<br><br>
   <!-- Footer -->
-<footer id = "footer" class="page-footer font-small blue pt-4 text-center">
+<footer id = "footer" class="page-footer font-small text-center">
 
   <!-- Footer Links -->
   
@@ -92,24 +93,14 @@
       <div class="col">
 
         <!-- Content -->
-        <h5 class="text-uppercase">The Movie Hub</h5>
+        <h5 style="color:white" class="text-uppercase">The Movie Hub</h5>
         <ul id="footer-nav">
-          <li><a href="default.asp">Home</a></li>
-          <li><a href="news.asp">Profile</a></li>
-          <li><a href="contact.asp">Favourites</a></li>
+          <li><a style="text-decoration: none;" href="index.html">Home</a></li>
+          <li><a style="text-decoration: none;" href="news.asp">Profile</a></li>
+          <li><a style="text-decoration: none;" href="favourites.html">Favourites</a></li>
         </ul>
 
       </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <ul style="list-style: none;">
-        <li><a href="default.asp"><i class="fab fa-2x fa-twitter"></i></a></li>
-        <li><a href="news.asp"><i class="fab  fa-2x fa-facebook"></i></a></li>
-        <li><a href="contact.asp"><i class="fab fa-2x fa-twitter-square"></i></a></li>
-      </ul>
-      <!-- Grid column -->
-
       <!-- Grid column -->
       <div class="col">
 
@@ -118,19 +109,28 @@
 
       </div>
       <!-- Grid column -->
+      <ul style="list-style: none;">
+        <li><a target="_blank" href="https://twitter.com/themoviedb?lang=en"><i class="fab fa-2x fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/themoviedb/"><i class="fab  fa-2x fa-facebook"></i></a></li>
+        <li><a target="_blank" href="contact.asp"><i class="fab fa-2x fa-twitter-square"></i></a></li>
+      </ul>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
 
     </div>
     <!-- Grid row -->
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright |
-    <a href="https://mdbootstrap.com/"> By: Sakib Shahriyar</a>
+  <div style= "color:white"class="footer-copyright text-center py-3">© 2020 Copyright | By: Sakib Shahriyar
   </div>
   <!-- Copyright -->
 
 </footer>
-    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -141,5 +141,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <script>
+      jQuery(function(){
+         jQuery('#nowPlaying').click();
+      });
+      </script>
   </body>
 </html>

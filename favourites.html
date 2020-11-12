@@ -15,25 +15,21 @@
   </head>
   <body>
     <!-- Nav-bar -->
-    <nav class="navbar navbar-expand-lg sticky navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><i class="fas fa-film fa-2x"></i><span style="font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a>
+    <nav class="navbar navbar-expand-lg sticky navbar-dark">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-film fa-2x"></i><span style="font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
       <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="form-inline my-2 my-lg-0 ml-auto">
-          <input id = "movie" class="form-control mr-sm-2 " style="font-size: 1.25rem;" type="search" placeholder="Search" aria-label="Search">
-          <button id = "search" class="btn btn-outline-success my-2 my-sm-0" type="button"><i class="fas fa-search fa-2x"></i></button>
-        </div>
         <ul id = "navigation" class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html"><i class="fas fa-home fa-2x"></i><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html"><i class="fas fa-user-alt fa-2x"></i></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#"><i class="fas fa-heart fa-2x"></i></a>
           </li>
         </ul>
@@ -51,122 +47,59 @@
      </div>
 </div>
 <br>
-<div id = "list"class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
-  <div class="col">
-    <a class="text-decoration-none" href="google.com">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w154/qfLpiXGV93x8EnZIjmuyO6qXBMx.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card with stretched link</h5>
-        <p class="card-text">Animation/Family</p>
-      </div>
-    </div></a>
-  </div>
-  <div class="col">
-    <a class="text-decoration-none" href="google.com">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w154/qfLpiXGV93x8EnZIjmuyO6qXBMx.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card with stretched link</h5>
-        <p class="card-text">Animation</p>
-      </div>
-    </div></a>
-  </div>
-  <div class="col">
-    <a class="text-decoration-none" href="google.com">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w154/qfLpiXGV93x8EnZIjmuyO6qXBMx.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card with stretched link</h5>
-        <p class="card-text">Animation</p>
-      </div>
-    </div></a>
-  </div>
-  <div class="col">
-    <a class="text-decoration-none" href="google.com">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w154/qfLpiXGV93x8EnZIjmuyO6qXBMx.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card with stretched link</h5>
-        <p class="card-text">Animation</p>
-      </div>
-    </div></a>
-  </div>
-  <div class="col">
-    <a class="text-decoration-none" href="google.com">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w154/qfLpiXGV93x8EnZIjmuyO6qXBMx.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card with stretched link</h5>
-        <p class="card-text">Animation</p>
-      </div>
-    </div></a>
-  </div>
-  <div class="col">
-    <a class="text-decoration-none" href="google.com">
-    <div class="card">
-      <img src="https://image.tmdb.org/t/p/w154/qfLpiXGV93x8EnZIjmuyO6qXBMx.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card with stretched link</h5>
-        <p class="card-text">Animation</p>
-      </div>
-    </div></a>
-  </div>
+<div id = "favouritesList"class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
+  
   </div> 
-
+</div>
   <br><br>
     <!-- Footer -->
-<footer id = "footer" class="page-footer font-small blue pt-4 text-center">
+    <footer id = "footer" class="page-footer font-small text-center">
 
-  <!-- Footer Links -->
-  
-
-    <!-- Grid row -->
-    <div class="row row-cols-lg-3">
-
-      <!-- Grid column -->
-      <div class="col">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">The Movie Hub</h5>
-        <ul id="footer-nav">
-          <li><a href="default.asp">Home</a></li>
-          <li><a href="news.asp">Profile</a></li>
-          <li><a href="contact.asp">Favourites</a></li>
-        </ul>
-
+        <!-- Grid row -->
+        <div class="row row-cols-lg-3">
+    
+          <!-- Grid column -->
+          <div class="col">
+    
+            <!-- Content -->
+            <h5 style="color:white" class="text-uppercase">The Movie Hub</h5>
+            <ul id="footer-nav">
+              <li><a style="text-decoration: none;" href="index.html">Home</a></li>
+              <li><a style="text-decoration: none;" href="news.asp">Profile</a></li>
+              <li><a style="text-decoration: none;" href="favourites.html">Favourites</a></li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+          <div class="col">
+    
+            <!-- Links -->
+            <img src="img/moviedb.png" alt="First slide" >
+    
+          </div>
+          <!-- Grid column -->
+          <ul style="list-style: none;">
+            <li><a target="_blank" href="https://twitter.com/themoviedb?lang=en"><i class="fab fa-2x fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/themoviedb/"><i class="fab  fa-2x fa-facebook"></i></a></li>
+            <li><a target="_blank" href="contact.asp"><i class="fab fa-2x fa-twitter-square"></i></a></li>
+          </ul>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div style= "color:white"class="footer-copyright text-center py-3">© 2020 Copyright | By: Sakib Shahriyar
       </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <ul style="list-style: none;">
-        <li><a href="default.asp"><i class="fab fa-2x fa-twitter-square"></i></a></li>
-        <li><a href="news.asp"><i class="fab  fa-2x fa-facebook-square"></i></a></li>
-        <li><a href="contact.asp"><i class="fab fa-2x fa-twitter-square"></i></a></li>
-      </ul>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col">
-
-        <!-- Links -->
-        <img src="img/moviedb.png" alt="First slide" >
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright |
-    <a href="https://mdbootstrap.com/"> By: Sakib Shahriyar</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-    </div>
+      <!-- Copyright -->
+    
+    </footer>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -178,7 +111,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
     <script>
-      getMovie();
+      getFavourites();
     </script>
   </body>
 </html>

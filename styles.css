@@ -8,6 +8,9 @@ body {
 #search {
   border-radius: 20px;
 }
+.navbar {
+  background-color: #1c2327;
+}
 #navigation li {
   margin-left: 15px;
 }
@@ -23,14 +26,13 @@ body {
 #latestMovies img {
   opacity: 0.6;
 }
-.carousel-caption {
+#latestMoviesInfo {
   position: absolute;
-  top: 40px;
-  bottom: 40px;
+  top: 10px;
   left: 40px;
-  right: 40px;
+  bottom: auto;
 }
-.myButton {
+.categoryButton {
   margin-top: 50px;
   margin-left: 5px;
   box-shadow: inset 0px 0px 15px 3px #23395e;
@@ -50,17 +52,16 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
-.myButton:hover {
-  background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-  background-color: #415989;
+.categoryButton:hover {
+  background: linear-gradient(to bottom, #6a93db 5%, #b5bbc9 100%);
 }
-.myButton:focus {
+.buttonFocus {
   position: relative;
   top: 1px;
   background: linear-gradient(to bottom, #6a93db 5%, #b5bbc9 100%);
 }
 
-#list .card {
+.card {
   margin-top: 30px;
   white-space: normal;
   overflow: hidden;
@@ -68,24 +69,10 @@ body {
   background-color: #100542;
   color: white;
   opacity: 0.6;
+  border-style: none;
 }
 
-#list .card:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-#searchList .card {
-  margin-top: 30px;
-  white-space: normal;
-  overflow: hidden;
-  text-align: left;
-  background-color: #100542;
-  color: white;
-  opacity: 0.6;
-}
-
-#searchList .card:hover {
+.card:hover {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -95,6 +82,12 @@ body {
   top: 0; /* When the element reaches top: 10px, it becomes fixed. */
   z-index: 100;
 }
+#footer {
+  transform: scale(1.1);
+  background-color: #1c2327;
+  padding: 60px;
+  margin: auto;
+}
 
 #footer .fab {
   border-radius: 100%;
@@ -102,7 +95,7 @@ body {
 }
 #footer img {
   height: 90px;
-  width: 150px;
+  width: 170px;
 }
 
 #footer-nav li {
@@ -161,28 +154,34 @@ body {
   }
 }
 
-#back {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#share {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-#heart {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 #item1 img {
   border-radius: 15px;
 }
 
 a {
   cursor: pointer;
+}
+
+#back {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+#heart {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+}
+
+#share {
+  position: absolute;
+  left: 80px;
+  bottom: 80px;
+}
+
+#movieContainer p {
+  font-size: large;
+  letter-spacing: 0.05rem;
+  line-height: 1.6;
 }
