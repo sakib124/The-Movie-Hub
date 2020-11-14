@@ -258,10 +258,10 @@ function getMovie() {
              <a href="javascript:history.back()"><i id="back" class="fas fa-3x fa-arrow-left w3-animate-left" style="font-size: 3vw;color:white"></i></a>
              <a onclick="favouritesSelected(${movieId})"><i id = "heart" class="fas fa-heart fa-3x w3-animate-right" style="font-size: 3vw;color:white;"></i></a>
              <a onclick="shareSelect()"><i id = "share" class="fas fa-share-square fa-3x" style="font-size: 3vw;color:white"></i></a>
-             <a target="_blank" href="index.html"><i id = "mail" class="fas fa-envelope-square fa-3x" style="font-size: 3vw;color:#228B22"></i></a>
-             <a target="_blank" href="index.html"><i id = "twitter" class="fab fa-twitter-square fa-3x" style="font-size: 3vw;color:#1DA1F2"></i></a>
-             <a target="_blank" href="index.html"><i id = "facebook" class="fab fa-facebook-square fa-3x" style="font-size: 3vw;color:#3b5998"></i></a>
-             <a target="_blank" href="index.html"><i id = "reddit" class="fab fa-reddit-square fa-3x" style="font-size: 3vw;color:#FF5700"></i></a>
+             <a target="_blank" href="mailto:?Subject=Cool%20Movie%20App!&amp;Body=https://the-movie-hub.web.app/"><i id = "mail" class="fas fa-envelope-square fa-3x" style="font-size: 3vw;color:#228B22"></i></a>
+             <a target="_blank" href="https://twitter.com/share?url=https://the-movie-hub.web.app&amp;text=The%20Movie%20Hub%20&amp;hashtags=moviehub"><i id = "twitter" class="fab fa-twitter-square fa-3x" style="font-size: 3vw;color:#1DA1F2"></i></a>
+             <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://the-movie-hub.web.app/"><i id = "facebook" class="fab fa-facebook-square fa-3x" style="font-size: 3vw;color:#3b5998"></i></a>
+             <a target="_blank" href="http://reddit.com/submit?url=https://the-movie-hub.web.app&amp;title=The%20Movie%20Hub"><i id = "reddit" class="fab fa-reddit-square fa-3x" style="font-size: 3vw;color:#FF5700"></i></a>
              </div>
        </div>`
           )
