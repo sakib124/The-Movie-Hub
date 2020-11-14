@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>The Movie Hub</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+  <body>
+      <!-- Sign In Page -->
+    <div id="signup" class="signup_div">
+        <h3 class="text-center text-white pt-5"><a class="navbar-brand" href="index.html"><i class="fas fa-film fa-2x"></i><span style="color:white;font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a></h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Sign Up</h3>
+                            <div class="form-group">
+                                <label for="Email" class="text-info">Email:</label><br>
+                                <input type="email" name="email" id="createdEmail" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="createdPassword" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Confirm Password:</label><br>
+                                <input type="password" name="password" id="confirmPassword" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="signupBtn" onclick="signUp()" type="button" class="btn btn-info btn-md" value="Sign Up">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a onclick="loginPage()" type="button" class="text-info">Sign In</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login" class="login_div">
+        <h3 class="text-center text-white pt-5"><a class="navbar-brand" href="index.html"><i class="fas fa-film fa-2x"></i><span style="color:white;font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a></h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Email:</label><br>
+                                <input type="text" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="browse-guest" class="text-info"><a onclick="browseGuest()" class="text-info">Browse as Guest</a></label><br>
+                                <input id = "loginBtn" onclick="login()" type="button" class="btn btn-info btn-md" value="Log In">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a onclick="registerPage()" type="button" class="text-info">Register here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="edit" class="edit_div">
+        <div style = "position: relative;top: 30px;left: 30px;"class="form-group">
+          <button style= "width:150px;margin:20px;" onclick="window.location.href='index.html'" class="btn btn-info btn-md">Home</button>
+          <button style="width:150px;margin:20px;" onclick="window.location.href='favourites.html'" class="btn btn-info btn-md">View Favourites</button>
+      </div>
+        <div class="container">
+        <h3 class="text-center text-white pt-5"><span id = "userHeading"></span></h3>
+          <h3 class="text-center text-white pt-5"><a class="navbar-brand" href="index.html"><i class="fas fa-film fa-2x"></i><span style="color:white;font-size: 2rem;margin-left: 5%;font-family: 'Roboto', sans-serif;">The Movie Hub</span></a></h3>
+          <div class="container">
+              <div id="login-row" class="row justify-content-center align-items-center">
+                  <div id="login-column" class="col-md-6">
+                      <div id="login-box" class="col-md-12">
+                          <form id="login-form" class="form" action="" method="post">
+                              <h3 class="text-center text-info">Edit Profile</h3>
+                              <div class="form-group">
+                                  <label for="email" class="text-info">Email:</label><br>
+                                  <input type="email" name="email" id="editEmail" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="editPassword" class="form-control">
+                            </div>
+                              <div class="form-group">
+                                  <label for="password" class="text-info">Confirm Password:</label><br>
+                                  <input type="password" name="password" id="confirmEditPassword" class="form-control">
+                              </div>
+                              <br>
+                              <div class="form-group">
+                                  <div class="row">
+                                  <input id = "saveEmail" onclick="saveUser()" style="margin:5px" type="button" class="btn btn-info btn-md col" value="Update Email">
+                                  <input id = "savePass" onclick="savePassword()" style="margin:5px" type="button" name="submit" class="btn btn-secondary btn-md col" value="Update Password">
+                                </div>
+                                <div class="row">
+                                  <input id = "delete" onclick="deleteUser()" style="margin:5px" type="button" class="btn btn-danger btn-md col" value="Delete User">
+                                   <input id = "logout" onclick="logoutUser()" style="margin:5px" type="button" class="btn btn-success btn-md col" value="Logout">
+                                </div>
+                                </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <footer id = "footer" style = "visibility: hidden;"></footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+<script src="auth.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

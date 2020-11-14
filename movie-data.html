@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>The Movie Hub</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
 
@@ -24,7 +25,11 @@
             <div id = "movieBackground">
                 <a href="javascript:history.back()"><i id="back" class="fas fa-3x fa-arrow-left" style="font-size: 3vw;color:white"></i></a>
                 <a href="#"><i id = "heart" class="fas fa-heart fa-3x" style="font-size: 3vw;color:white;"></i></a>
-                <a href="index.html"><i id = "share" class="fas fa-share-square fa-3x" style="font-size: 3vw;color:white"></i></a>
+                <a href="#"><i id = "share" class="fas fa-share-square fa-3x" style="font-size: 3vw;color:white"></i></a>
+                <a target="_blank" href="#"><i id = "mail" class="fas fa-envelope-square fa-3x" style="font-size: 3vw;color:#228B22"></i></a>
+             <a target="_blank" href="#"><i id = "twitter" class="fab fa-twitter-square fa-3x" style="font-size: 3vw;color:#1DA1F2"></i></a>
+             <a target="_blank" href="#"><i id = "facebook" class="fab fa-facebook-square fa-3x" style="font-size: 3vw;color:#3b5998"></i></a>
+             <a target="_blank" href="#"><i id = "reddit" class="fab fa-reddit-square fa-3x" style="font-size: 3vw;color:#FF5700"></i></a>
             </div>
           </div>
         </div>
@@ -95,6 +100,8 @@
     </div>
     <br><br>
 
+    <footer id = "footer" style = "display: none;"></footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -103,6 +110,15 @@
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script src="auth.js"></script>
     <script src="scripts.js"></script>
     <script>
         getMovie();

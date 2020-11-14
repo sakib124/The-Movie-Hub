@@ -1,5 +1,6 @@
 body {
   background-color: #100542;
+  overflow-x: hidden;
 }
 .form-inline .form-control {
   border-radius: 20px;
@@ -91,11 +92,11 @@ body {
 
 #footer .fab {
   border-radius: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 #footer img {
   height: 90px;
-  width: 170px;
+  width: 190px;
 }
 
 #footer-nav li {
@@ -125,7 +126,7 @@ body {
 #signup .container #login-row #login-column #login-box {
   margin-top: 70px;
   max-width: 600px;
-  height: 480px;
+  height: 405px;
   border: 1px solid #9c9c9c;
   background-color: #eaeaea;
 }
@@ -180,8 +181,64 @@ a {
   bottom: 80px;
 }
 
+#mail {
+  position: absolute;
+  left: 80px;
+  bottom: 130px;
+  display: none;
+}
+
+#twitter {
+  position: absolute;
+  left: 80px;
+  bottom: 180px;
+  display: none;
+}
+
+#facebook {
+  position: absolute;
+  left: 80px;
+  bottom: 230px;
+  display: none;
+}
+
+#reddit {
+  position: absolute;
+  left: 80px;
+  bottom: 280px;
+  display: none;
+}
+
 #movieContainer p {
   font-size: large;
   letter-spacing: 0.05rem;
   line-height: 1.6;
+}
+
+#signup,
+#edit,
+#login {
+  display: none;
+}
+
+#favouritesPage {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 750px) {
+  #mail {
+    bottom: 100px;
+  }
+
+  #twitter {
+    bottom: 120px;
+  }
+
+  #facebook {
+    bottom: 140px;
+  }
+
+  #reddit {
+    bottom: 160px;
+  }
 }
